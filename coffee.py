@@ -32,7 +32,7 @@ def get_place_id(geocode_result, place_id):
 ####################################################### Main #######################################################
 # Create a map with None values
 coord = {'lat': None, 'lng': None}
-key = 'AIzaSyBeDHc2IX4OFFAUnwMuNG93fJbd52_K274'
+key = 'key goes here'
 gmaps = googlemaps.Client(key)
 try:
     geocode_result = gmaps.geocode("Cat and Cloud Aptos, CA")
@@ -59,7 +59,7 @@ except IndexError as err:
 #pprint.pprint(geocode_result[0]['place_id'])
 #place_id = geocode_result[0]['place_id'].strip('\'')
 #print(place_id)
-#url = 'https://maps.googleapis.com/maps/api/place/details/json?placeid=' + place_id + '&fields=name,rating,formatted_phone_number,website,reviews&key=AIzaSyAvoK_HHweMStq2uEXSYIWlygfYXFP9q4g'
+#url = 'https://maps.googleapis.com/maps/api/place/details/json?placeid=' + place_id + '&fields=name,rating,formatted_phone_number,website,reviews&key=key'
 
 
 #res = requests.get(url)
